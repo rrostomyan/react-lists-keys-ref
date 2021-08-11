@@ -6,7 +6,7 @@ class Li extends React.Component {
     }
 
     componentWillUnmount() {
-        console.log('li did unmount');
+        console.log('li unmounted');
     }
 
     render() {
