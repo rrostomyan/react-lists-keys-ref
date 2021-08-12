@@ -1,13 +1,15 @@
 import React from "react";
 
 class Li extends React.Component {
+  componentWillUnmount() {
+    console.log("li tag did unmount");
+  }
+  componentDidMount() {
+    console.log("Did mount");
+  }
 
-    componentWillUnmount() {
-        console.log('li tag did unmount');
-    }
-
-    render() {
-    const {item} = this.props;
+  render() {
+    const { item } = this.props;
     return (
       <li>
         <div>
