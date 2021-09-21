@@ -5,7 +5,7 @@ import Button from "./components/Button";
 
 class App extends React.Component {
   state = {
-    items: [1, 2, 3]
+    items: [1, 2, 3],
   };
   constructor(props) {
     super(props);
@@ -21,13 +21,15 @@ class App extends React.Component {
     this.ref.current.handleBtnClick();
   };
   componentDidMount() {
+    alert("component did mount");
+
     this.timer = setInterval(() => {
       this.setState({
         items: [
           Math.floor(Math.random() * 1000),
           Math.floor(Math.random() * 1000),
-          Math.floor(Math.random() * 1000)
-        ]
+          Math.floor(Math.random() * 1000),
+        ],
       });
     }, 2000);
   }
