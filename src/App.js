@@ -22,6 +22,7 @@ class App extends React.Component {
   };
   componentDidMount() {
     alert("component did mount");
+    alert('Did mount!')
 
     this.timer = setInterval(() => {
       this.setState({
