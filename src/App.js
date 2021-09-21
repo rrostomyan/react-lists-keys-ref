@@ -1,11 +1,11 @@
-import React from "react";
-import "./App.css";
-import Li from "./components/Li";
-import Button from "./components/Button";
+import React from 'react';
+import './App.css';
+import Li from './components/Li';
+import Button from './components/Button';
 
 class App extends React.Component {
   state = {
-    items: [1, 2, 3]
+    items: [1, 2, 3],
   };
   constructor(props) {
     super(props);
@@ -21,23 +21,27 @@ class App extends React.Component {
     this.ref.current.handleBtnClick();
   };
   componentDidMount() {
+    alert('component did mount');
+    alert('Did mount!');
+    alert('new change');
+
     this.timer = setInterval(() => {
       this.setState({
         items: [
           Math.floor(Math.random() * 1000),
           Math.floor(Math.random() * 1000),
-          Math.floor(Math.random() * 1000)
-        ]
+          Math.floor(Math.random() * 1000),
+        ],
       });
     }, 2000);
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    console.log("App did update");
+    console.log('App did update');
   }
 
   componentWillUnmount() {
-    console.log("App did unmount");
+    console.log('App did unmount');
     if (this.timer) clearInterval(this.timer);
   }
 
