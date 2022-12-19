@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import React from "react";
 import "./App.css";
 
@@ -6,7 +7,7 @@ function App() {
     <>
       <div>Empty App for test user</div>
       <div>Changed Value</div>
-      <button>dfgsbfhsvdkasmdlkn</button>
+      <Button variant="contained">Click</Button>
     </>
   );
 }
