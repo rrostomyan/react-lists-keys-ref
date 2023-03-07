@@ -7,11 +7,10 @@ function App() {
     <>
       <div>Empty App for test user</div>
       <TextField value="gdfdfg" />
-      <Button variant="contained">Click</Button>
+      <Button variant="contained">increment</Button>
 
       <div>from Artur</div>
       <div>hello</div>
-
     </>
   );
 }
