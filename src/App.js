@@ -7,6 +7,7 @@ function App() {
     <>
       <div>Empty App for test user</div>
       <TextField value="gdfdfg" />
+      <TextField value="UserName" />
       <Button variant="contained">Increment</Button>
       <Button variant="contained">Decrement</Button>
       <div>from Artur</div>
